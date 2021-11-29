@@ -1,0 +1,120 @@
+.footer {
+  padding-top: 100px;
+  padding-bottom: 96px;
+  &-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 150px;
+  }
+  &-heading {
+    font-size: 40px;
+    line-height: 130%;
+    margin-bottom: 20px;
+  }
+  &-button {
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+  }
+
+  &-bottom {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-gap: 0 50px;
+  }
+  //Column 1
+  &-logo {
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+    margin-bottom: 67px;
+  }
+  &-location {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+    color: $heading-color;
+    letter-spacing: 0.01em;
+    margin-bottom: 10px;
+  }
+  &-email {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 180%;
+    letter-spacing: 0.01em;
+    color: $heading-color;
+    margin-bottom: 118px;
+  }
+  // Column 2, 3, 4
+  &-heading-small {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 160%;
+    margin-bottom: 30px;
+  }
+  &-links {
+    list-style: none;
+  }
+  &-link {
+    color: inherit;
+    line-height: 250%;
+    font-weight: normal;
+  }
+
+  .social {
+    display: flex;
+    align-items: center;
+    gap: 0 14px;
+    &-item {
+      transition: all 0.2s linear;
+      border-radius: 100rem;
+      &:hover {
+        background-color: $secondary-color;
+      }
+    }
+  }
+  .copyright {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 180%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .footer-top {
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .footer-top {
+      flex-direction: column;
+      gap: 30px 0;
+      padding-bottom: 50px;
+    }
+    .footer-button {
+      flex-direction: column;
+      gap: 30px 0;
+    }
+    .copyright {
+      font-size: 14px;
+    }
+  }
+  .footer-bottom {
+    grid-template-columns: 1fr;
+  }
+  .footer-heading-small {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .footer-logo {
+    margin-bottom: 30px;
+  }
+  .footer-email {
+    margin-bottom: 20px;
+  }
+}
